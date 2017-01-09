@@ -1640,7 +1640,7 @@ function createSelf(data){
 		spellEffect.add(superBulbLight.clone());
 		//var soundClone = sound.clone();
 		
-		var sound = new THREE.Audio3D({"url" : "boom.mp3", "reciever" : hitboxSelf, "onload": playWhenLoaded, "radius": 500});
+		var sound = new THREE.Audio3D({"url" : "sounds/boom.mp3", "reciever" : hitboxSelf, "onload": playWhenLoaded, "radius": 500});
 		sound.name = 'sound';
 		spell.add(sound);
 		
@@ -1739,7 +1739,7 @@ function createSelf(data){
 		//scene.add(Ball);
 		fireball.name = 'fireball';
 		fireball.owner = name;
-		var sound = new THREE.Audio3D({"url" : "spell.mp3", "reciever" : hitboxSelf, "onload": playWhenLoaded, "radius": 500});
+		var sound = new THREE.Audio3D({"url" : "sounds/spell.mp3", "reciever" : hitboxSelf, "onload": playWhenLoaded, "radius": 500});
 		sound.name = 'sound';
 		fireball.add(sound);
 
